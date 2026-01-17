@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.header{
+    padding: 40px;
+    background: rgb(70, 238, 70);
+    box-sizing: border-box;
+    box-shadow: white;
+}
+.sidebar{
+    width: 10%;
+    background-color: rgb(70, 238, 70);
+    padding: 90px;
+    float: left;
+}
+.content1{
+    padding: 40px;
+    background: rgb(70, 238, 70);
+}
+.content2{
+    float: left;
+    padding: 48px;
+background-color:rgb(70, 238, 70);
+}
+.content3{
+    float: right;
+    padding: 48px;
+    background-color: rgb(70, 238, 70);
+
+}
+.footer{
+    clear: both; 
+    padding: 40px;
+    background-color: rgb(70, 238, 70);
+}

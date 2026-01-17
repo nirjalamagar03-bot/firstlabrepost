@@ -1,0 +1,32 @@
+*{
+text-align: center;
+padding: 0;
+box-sizing: border-box;
+margin: 0;
+}
+
+.header{
+    background-color: red;
+    padding: 20px 0;
+}
+.menu{
+    background-color: blue;
+padding: 20px 0;
+}
+.sidebar{
+    float: left;
+    background-color: blueviolet;
+    padding: 100px 0;
+    width: 20%;
+}
+.content{
+    float: right;
+    background-color: aqua;
+    padding: 100px 0;
+    width: 80%;
+}
+.footer{
+    clear: both;
+    background-color: brown;
+    padding: 20px 0;
+}

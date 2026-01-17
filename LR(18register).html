@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style18.css">
+</head>
+<body>
+    <div class="form-box">
+        <h1 class="form-titel">Registertion form</h1>
+        <form action="#" method="get">
+            <fieldset>
+                <Legend>Personal Information</Legend>
+                <div class="field-group">
+                    <label for="name" >Name:</label>
+                    <input type="text" id="name" class="filed-group" value="" placeholder="enter your name">
+                </div>
+                <div class="field-group">
+                    <label for="add">Address:</label>
+                    <input type="text" id="add" name="add" value="">
+                </div>
+<div class="field-group">
+    <label for="email">Email:</label>
+    <input type="text" name="email" id="email" value="" placeholder="domain12@gmail.com">
+</div>
+<div class="field-group">
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" value="" placeholder="927837858">
+</div>
+<div class="filed-group">
+    <tr>
+        <td>Gender:</td>
+        <td>
+            <input type="radio" name="g">Female
+            <input type="radio" name="g">Male
+        </td>
+    </tr>
+</div>
+<div class="field-group">
+    <label for="country">Country:</label>
+    <select>
+        <option value="Nepal">Nepal</option>
+        <option value="India">Maldives</option>
+        <option value="Nepal">US</option>
+        <option value="Nepal">Australia</option>
+        <option value="Nepal">Japan</option>
+    </select>
+</div>
+<div class="field-group">
+    <label for="msg">Message:</label>
+   <textarea name="msg" id="msg" rows="3" cols="50"></textarea>
+</div>
+<div class="sub-field">
+    <input type="checkbox" name="acceptance" id="acceptance" value="">
+    <label for="acceptance">I Accept Terms & Conditions</label>
+</div>
+<div class="btn-group">
+    <button type="submit" class="btn-reg">Register</button>
+    <button type="submit" class="btn-clear">Clear</button>
+</div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
