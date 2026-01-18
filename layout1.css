@@ -21,6 +21,7 @@
 .content1{
     padding: 40px;
     background: rgb(70, 238, 70);
+    flex-direction: column;
 }
 .content2{
     float: left;

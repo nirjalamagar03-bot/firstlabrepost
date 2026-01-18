@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout2</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            color: black;
+            font-size: large;
+            gap: 10px;
+            padding: 10px;
+        }
+        .box,.sidebar,.content1,.content2,.content3,.header,.footer
+        {
+            border: 1px solid #000;
+            background-color: chartreuse;
+            text-align: center;
+padding: 20px;
+margin: 5px;
+
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            gap: 10px;
+        }
+        .middle
+        {
+            display: flex;
+
+        }
+        .sidebar{
+            width: 150px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 10px;
+        }
+        .content_row
+        {
+            display: flex;
+            flex: 1;
+            gap: 10px;
+        }
+        .content1
+        {
+        height: 100px;
+        }
+        .content2,.content3 
+        {
+            flex: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="box"> Header</header>
+        <div class="middle">
+            <aside class="sidebar">Sidebar</aside>
+            <div class="content">
+                <div class="content1">Content1</div>
+                <div class="colntent_row">
+<div class="content_row">
+    <div class="content2">content2</div>
+    <div class="content3">content3</div>
+               </div>
+                </div>
+            </div>
+            <footer class="box">Footer</footer>
+        </div>
+    </div>
+    
+</body>
+</html>

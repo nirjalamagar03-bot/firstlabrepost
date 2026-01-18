@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Invoice</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .invoice {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+    }
+
+    .top-bar {
+        height: 6px;
+        background: #f05a28;
+        margin: -20px -20px 20px -20px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        background: #777;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    .invoice-title {
+        text-align: right;
+    }
+
+    .invoice-title h2 {
+        margin: 0;
+    }
+
+    .details {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th {
+        background: #f05a28;
+        color: white;
+        padding: 8px;
+        text-align: left;
+    }
+
+    td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .totals {
+        width: 300px;
+        float: right;
+        margin-top: 20px;
+    }
+
+    .totals td {
+        padding: 6px;
+    }
+
+    .balance {
+        background: #f5d6cf;
+        font-weight: bold;
+    }
+
+    .bottom-bar {
+        height: 6px;
+        background: #f05a28;
+        margin: 30px -20px -20px -20px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="invoice">
+    <div class="top-bar"></div>
+
+    <div class="header">
+        <div>
+            <div class="logo">Tex</div>
+            <p><b>Your Company Name</b><br>
+               Your contact details</p>
+        </div>
+
+        <div class="invoice-title">
+            <h2>INVOICE</h2>
+            <p>Date: ___ / ___ / ____<br>
+               Invoice No: _____</p>
+        </div>
+    </div>
+
+    <div class="details">
+        <div>
+            <b>BILL TO</b><br>
+            Client Name<br>
+            Address<br>
+            Phone
+        </div>
+
+        <div>
+            <b>SHIP TO</b><br>
+            Client Name<br>
+            Address<br>
+            Phone
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th>Description</th>
+            <th>Qty</th>
+            <th>Unit Price</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Item 1</td>
+            <td>1</td>
+            <td>0.00</td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <td>Item 2</td>
+            <td>1</td>
+            <td>0.00</td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <td>Item 3</td>
+            <td>1</td>
+            <td>0.00</td>
+            <td>0.00</td>
+        </tr><tr>
+            <td>Item 4</td>
+            <td>1</td>
+            <td>0.00</td>
+            <td>0.00</td>
+        </tr><tr>
+            <td>Item 5</td>
+            <td>1</td>
+            <td>0.00</td>
+            <td>0.00</td>
+        </tr><tr>
+            <td>Item 6</td>
+            <td>1</td>
+            <td>0.00</td>
+            <td>0.00</td>
+        </tr><tr>
+            <td>Item 7</td>
+            <td>1</td>
+            <td>0.00</td>
+            <td>0.00</td>
+        </tr><tr>
+            <td>Item 8</td>
+            <td>1</td>
+            <td>0.00</td>
+            <td>0.00</td>
+        </tr>
+    </table>
+
+    <table class="totals">
+        <tr>
+            <td>Subtotal</td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <td>Tax</td>
+            <td>0.00</td>
+        </tr>
+        <tr class="balance">
+            <td>Balance Due</td>
+            <td>$ 0.00</td>
+        </tr>
+    </table>
+
+    <div style="clear: both;"></div>
+
+    <div class="bottom-bar"></div>
+</div>
+
+</body>
+</html>
